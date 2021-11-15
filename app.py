@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
 import smtplib
 from decouple import config
+from flask import Flask, render_template, request, redirect, url_for, flash
 
 app=Flask(__name__)
 app.secret_key = 'some_secret'
