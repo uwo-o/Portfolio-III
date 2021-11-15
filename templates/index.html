@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <script src="https://kit.fontawesome.com/725c33a475.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="{{url_for('static', filename='img/icono.png')}}" type="image/x-icon">
+    <title>Portfolio</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+        <span id="flash-message" onclick="closeMessage()">{{message}}</span>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <div class="header-container">
+        <nav>
+            <a href="#"><span>u</span>wo<span>.</span></a>
+            <ul id="menu-options">
+                <li><a href="#" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#contact" class="hire">Hire me</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()" id="menu-icon">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
+            <div class="black-filter-responsive"></div>
+        </nav>
+    </div>
+    <div class="hero-container">
+        <div class="hero">
+            <h1>Hi, I'm <span>Hugo Campos</span></h1>
+            <p>Front end developer and Computer engineering student.</p>
+            <a href="#contact" class="btn">Hire me</a>
+        </div>
+        <div class="social-media">
+            <a target="_blank" href="https://www.instagram.com/_h.go__"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://github.com/uwo-o"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/hugo-campos-7b7843212/"><i class="fab fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://www.behance.net/uwo-o"><i class="fab fa-behance"></i></a>
+        </div>
+        <div class="square" id=hero-square></div>
+        <img src="{{url_for('static', filename='img/IMG_20210904_222817.png')}}" alt="hero-image" id="hero-image">
+    </div>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="column-left">
+                <h2>About me</h2>
+                <div class="row-1">
+                    <div class="column-image"><img src="{{url_for('static', filename='img/217751359_511585566623997_6439418448863437347_n.jpg')}}" alt="image-of-me"></div>
+                    <div class="column-text">
+                        <p>I'm a front end developer and Computer engineering student, II'm passionate about web development, I'm always looking for new challenges and I love to create beautiful and functional websites.</p>
+                        <a href="https://docs.google.com/document/d/1wTsor6ydbskI0ARNw7szjRb6-H7DMHQC/edit?usp=sharing&ouid=108554400702081125729&rtpof=true&sd=true" target="_blank">Download CV</a>
+                    </div>
+                </div>
+                <h2>My services</h2>
+                <div class="row-2">
+                    <div class="services">
+                        <span><i class="fas fa-code"></i><h3>Front-End development</h3></span>
+                        <p>I make for you a layout website using HTML5, CSS3 and JavaScript</p>
+                    </div>
+                    <div class="services">
+                        <span><i class="fas fa-pencil-ruler"></i><h3>UI/UX desing</h3></span>
+                        <p>I desing for you a layour for your future website using Figma</p>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="column-right">
+                <h2>Academic Antecedents</h2>                
+                <div class="row-1">
+                    <div class="academic">
+                        <i class="fas fa-graduation-cap"></i><p>Middle Level Electronics Technician</p>
+                    </div>
+                    <div class="academic">
+                        <i class="fas fa-book-open"></i><p>Computer Enginnering</p>
+                    </div>
+                    <div class="academic">
+                        <i class="fas fa-book-open"></i><p>Bachelor of Bionic Technology</p>
+                    </div>
+                </div>
+                <h2>Experience</h2>
+                <div class="row-2">
+                    <div class="experience">
+                        <h1>1-</h1><p>Years</p><p>Front-End Developer</p>
+                    </div>
+                    <div class="experience">
+                        <h1>1-</h1><p>Years</p><p>UI/UX Designer</p>
+                    </div>
+                </div>
+                <h2>My skills</h2>
+                <div class="row-3">
+                    <div class="skill">
+                        <div class="circle html5">
+                            <div class="value">75%</div>
+                        </div>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill">
+                        <div class="circle css3">
+                            <div class="value">60%</div>
+                        </div>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill">
+                        <div class="circle js">
+                            <div class="value">35%</div>
+                        </div>
+                        <h3>JS</h3>
+                    </div>
+                    <div class="skill">
+                        <div class="circle python">
+                            <div class="value">80%</div>
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill">
+                        <div class="circle figma">
+                            <div class="value">60%</div>
+                        </div>
+                        <h3>Figma</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1>Contact with me</h1>
+            <h3>If you liked that you've seen, you might consider to contact me for some project.</h3>
+            <form action="" method="post">
+                <input type="text" name="name" id="" placeholder="Name" required>
+                <input type="email" name="email" id="" placeholder="Email" required>
+                <input type="text" name="subject" id="" placeholder="Subjet" required>
+                <textarea type="Text" name="message" placeholder="Write me here" class="input-text" required></textarea>
+                <input type="submit" value="Send contact mail" class="btn">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <h2>My social media</h2>
+            <div class="row">
+                <a target="_blank" href="https://www.instagram.com/_h.go__"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://github.com/uwo-o"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/hugo-campos-7b7843212/"><i class="fab fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://www.behance.net/uwo-o"><i class="fab fa-behance"></i></a>
+            </div>
+            <p>Hugo Campos (uwo)</p>
+            <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+        </div>
+    </footer>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>
