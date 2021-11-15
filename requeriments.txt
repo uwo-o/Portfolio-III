@@ -1,0 +1,7 @@
+Flask==2.0.2
+Flask-MySQLdb==0.2.0
+python-decouple==3.5
+requests==2.25.1
+requests-ntlm==1.1.0
+requests-toolbelt==0.9.1
+responses==0.13.3
