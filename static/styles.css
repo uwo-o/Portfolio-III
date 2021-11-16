@@ -216,6 +216,9 @@ html{
     transition: .5s;
     margin: 10px;
 }
+.hero-container .social-media a i:hover{
+    color: var(--primary-color)
+}
 .hero-container img{
     position: absolute;
     width: 550px;
@@ -617,6 +620,10 @@ footer .container a i{
     color: white;
     margin: 25px 0;
     text-align: center;
+}
+
+footer .container a i:hover{
+    color: var(--secondary-color)
 }
 
 @media screen and (max-width: 1350px){
