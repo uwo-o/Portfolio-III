@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
     <script src="https://kit.fontawesome.com/725c33a475.js" crossorigin="anonymous"></script>
     <link rel="icon" href="{{url_for('static', filename='img/icono.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
 </head>
 <body>
@@ -38,15 +39,15 @@
     </div>
     <div class="hero-container">
         <div class="hero">
-            <h1>Hi, I'm <span>Hugo Campos</span></h1>
-            <p>Front end developer and Computer engineering student.</p>
-            <a href="#contact" class="btn">Hire me</a>
+            <h1 data-aos="fade-right">Hi, I'm <span>Hugo Campos</span></h1>
+            <p data-aos="fade-right" data-aos-delay="100">Front end developer and Computer engineering student.</p>
+            <a href="#contact" class="btn" data-aos="fade-right" data-aos-delay="200">Hire me</a>
         </div>
         <div class="social-media">
-            <a target="_blank" href="https://www.instagram.com/_h.go__"><i class="fab fa-instagram"></i></a>
-            <a target="_blank" href="https://github.com/uwo-o"><i class="fab fa-github"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/hugo-campos-7b7843212/"><i class="fab fa-linkedin-in"></i></a>
-            <a target="_blank" href="https://www.behance.net/uwo-o"><i class="fab fa-behance"></i></a>
+            <a data-aos="fade-right" data-aos-delay="300" target="_blank" href="https://www.instagram.com/_h.go__"><i class="fab fa-instagram"></i></a>
+            <a data-aos="fade-right" data-aos-delay="400" target="_blank" href="https://github.com/uwo-o"><i class="fab fa-github"></i></a>
+            <a data-aos="fade-right" data-aos-delay="500" target="_blank" href="https://www.linkedin.com/in/hugo-campos-7b7843212/"><i class="fab fa-linkedin-in"></i></a>
+            <a data-aos="fade-right" data-aos-delay="600" target="_blank" href="https://www.behance.net/uwo-o"><i class="fab fa-behance"></i></a>
         </div>
         <div class="square" id=hero-square></div>
         <img src="{{url_for('static', filename='img/IMG_20210904_222817.png')}}" alt="Hugo Fernando Campos Castro" id="hero-image">
@@ -56,19 +57,19 @@
             <div class="column-left">
                 <h2>About me</h2>
                 <div class="row-1">
-                    <div class="column-image"><img src="{{url_for('static', filename='img/217751359_511585566623997_6439418448863437347_n.jpg')}}" alt="Hugo Fernando Campos Castro"></div>
-                    <div class="column-text">
+                    <div class="column-image" data-aos="fade-left"><img src="{{url_for('static', filename='img/217751359_511585566623997_6439418448863437347_n.jpg')}}" alt="Hugo Fernando Campos Castro"></div>
+                    <div class="column-text" data-aos="zoom-in">
                         <p>I'm a front end developer and Computer engineering student, II'm passionate about web development, I'm always looking for new challenges and I love to create beautiful and functional websites.</p>
                         <a href="https://docs.google.com/document/d/1wTsor6ydbskI0ARNw7szjRb6-H7DMHQC/edit?usp=sharing&ouid=108554400702081125729&rtpof=true&sd=true" target="_blank">Download CV</a>
                     </div>
                 </div>
                 <h2>My services</h2>
                 <div class="row-2">
-                    <div class="services">
+                    <div class="services" data-aos="zoom-in-up">
                         <span><i class="fas fa-code"></i><h3>Front-End development</h3></span>
                         <p>I make for you a layout website using HTML5, CSS3 and JavaScript</p>
                     </div>
-                    <div class="services">
+                    <div class="services" data-aos="zoom-in-up">
                         <span><i class="fas fa-pencil-ruler"></i><h3>UI/UX desing</h3></span>
                         <p>I desing for you a layour for your future website using Figma</p>
                     </div>
@@ -78,52 +79,52 @@
             <div class="column-right">
                 <h2>Academic Antecedents</h2>                
                 <div class="row-1">
-                    <div class="academic">
+                    <div class="academic" data-aos="fade-left">
                         <i class="fas fa-graduation-cap"></i><p>Middle Level Electronics Technician</p>
                     </div>
-                    <div class="academic">
+                    <div class="academic" data-aos="fade-left">
                         <i class="fas fa-book-open"></i><p>Computer Enginnering</p>
                     </div>
-                    <div class="academic">
+                    <div class="academic" data-aos="fade-left">
                         <i class="fas fa-book-open"></i><p>Bachelor of Bionic Technology</p>
                     </div>
                 </div>
                 <h2>Experience</h2>
                 <div class="row-2">
-                    <div class="experience">
+                    <div class="experience" data-aos="zoom-in">
                         <h1>1-</h1><p>Years</p><p>Front-End Developer</p>
                     </div>
-                    <div class="experience">
+                    <div class="experience" data-aos="zoom-in">
                         <h1>1-</h1><p>Years</p><p>UI/UX Designer</p>
                     </div>
                 </div>
                 <h2>My skills</h2>
                 <div class="row-3">
-                    <div class="skill">
+                    <div class="skill" data-aos="zoom-in-up">
                         <div class="circle html5">
                             <div class="value">75%</div>
                         </div>
                         <h3>HTML5</h3>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="zoom-in-up">
                         <div class="circle css3">
                             <div class="value">60%</div>
                         </div>
                         <h3>CSS3</h3>
                     </div>
-                    <div class="skill">
-                        <div class="circle js">
+                    <div class="skill" data-aos="zoom-in-up">
+                        <div class="circle js" >
                             <div class="value">35%</div>
                         </div>
                         <h3>JS</h3>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="zoom-in-up">
                         <div class="circle python">
                             <div class="value">80%</div>
                         </div>
                         <h3>Python</h3>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="zoom-in-up">
                         <div class="circle figma">
                             <div class="value">60%</div>
                         </div>
@@ -146,7 +147,7 @@
         </div>
     </section>
     <footer>
-        <div class="container">
+        <div class="container" data-aos="zoom-in-up">
             <h2>My social media</h2>
             <div class="row">
                 <a target="_blank" href="https://www.instagram.com/_h.go__"><i class="fab fa-instagram"></i></a>
@@ -159,5 +160,12 @@
         </div>
     </footer>
     <script src="{{url_for('static',filename='js/script.js')}}"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            offset: 0,
+        });
+    </script>
 </body>
 </html>

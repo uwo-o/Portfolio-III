@@ -235,6 +235,7 @@ html{
     bottom: 15%;
     right: 10%;
     transform: rotate(-37deg);
+    transition: 100ms;
 }
 .about{
     background: #efefef;
