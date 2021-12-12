@@ -138,7 +138,7 @@ html{
     z-index: 2;
 }
 
-.header-container div div{  
+.header-container div div{
     background-color: white;
     width: 42px;
     height: 4px;
@@ -358,7 +358,7 @@ html{
     padding: 100px 30px;
     border-radius: 50px;
     background-color: white;
-    margin: 50px;
+    margin: 15px;
     cursor: pointer;
     transition: .5s;
 }
@@ -706,7 +706,7 @@ footer .container a i:hover{
         background-color: transparent;
         border-radius: 0px;
     }
-    
+
     .header-container nav ul li .hire:hover{
         background-color: transparent;
         color: #fff;
@@ -714,7 +714,7 @@ footer .container a i:hover{
     .header-container nav ul li a:hover{
         transform: translateY(-3px);
     }
-    
+
     .header-container nav ul li a::after{
         content: '';
         width: 0%;
@@ -724,7 +724,7 @@ footer .container a i:hover{
         display: block;
         transition: .5s;
     }
-    
+
     .header-container nav ul li a:hover::after{
         width: 100%;
     }
