@@ -1,6 +1,6 @@
 import smtplib
 from decouple import config
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
 
 app=Flask(__name__)
 app.secret_key = config('SECRET_KEY')
@@ -24,6 +24,11 @@ def index():
             flash('An error occured. Please try again.')
         return redirect(url_for('index'))
     return render_template('index.html')
+
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 if __name__=='__main__':
     app.run(debug=True,host='0.0.0.0')
