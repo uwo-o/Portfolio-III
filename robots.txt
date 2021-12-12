@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://uwo.pythonanywhere.com/sitemap.xml
