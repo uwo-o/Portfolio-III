@@ -17,6 +17,20 @@
     <link rel="icon" href="{{url_for('static', filename='img/icono.png')}}" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Hugo Campos Castro - Portfolio Web</title>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          "name": "Hugo Fernando Campos Castro",
+          "url": "http://uwo.pythonanywhere.com/",
+          "image": "http://uwo.pythonanywhere.com/static/img/IMG_20210904_222817.png",
+          "sameAs": "http://uwo.pythonanywhere.com/",
+          "jobTitle": "Front end developer"  
+        }
+    </script>
+
+
 </head>
 <body>
     {% with messages = get_flashed_messages() %}
