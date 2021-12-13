@@ -9,7 +9,6 @@
     <meta name="author" content='Hugo Fernando Campos Castro'>
     <meta name="keywords" content="Portfolio, Portfolio web, personal website">
     <meta name="description" content="This is a portfolio designed in html5, vanilla css and some JavaScript">
-    <meta name="canonical" content="http://uwo.pythonanywhere.com/">
     <meta name="content-language" content="en">
     <meta name="google-site-verification" content="zLfg_KUVMLd412_2SpHWQRuOgToDqInQ0eQsvCN1TyQ" />
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
@@ -17,7 +16,22 @@
     <link rel="icon" href="{{url_for('static', filename='img/icono.png')}}" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Hugo Campos Castro - Portfolio Web</title>
-    <script src="{{url_for('static', filename='js/scheme.js')}}" type="application/ld+json"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          "name": "Hugo Fernando Campos Castro",
+          "url": "http://uwo.pythonanywhere.com/",
+          "image": "http://uwo.pythonanywhere.com/static/img/IMG_20210904_222817.png",
+          "sameAs": [
+            "https://www.behance.net/uwo-o",
+            "https://www.linkedin.com/in/uwo-o/",
+            "https://github.com/uwo-o",
+            "https://www.instagram.com/_h.go__"
+          ],
+          "jobTitle": "Front end developer"  
+        }
+    </script>
 
 
 </head>
