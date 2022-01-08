@@ -190,10 +190,10 @@ html{
     font-size: 1.2rem;
     text-transform: uppercase;
     border: 1px solid var(--primary-color);
-    transition: .5s;
     text-align: center;
     padding:15px 0px;
     border-radius: 50px;
+    transition: .5s;
 }
 .hero-container .hero a:hover{
     background: #fff;
@@ -495,6 +495,137 @@ html{
     background: conic-gradient(var(--primary-color) 0%, var(--primary-color) 60%, var(--secondary-color) 60%, var(--secondary-color) 100%);
 }
 
+.projects{
+    background-color: #efefef;
+    padding: 0 25px;
+    width: 100%;
+    height: 100vh;
+}
+
+.projects h1{
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.projects .swiper-wrapper{
+    width: auto;
+    align-items: center;
+}
+
+
+.projects .swiper-wrapper .swiper-slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #efefef;
+    width: 70%;
+}
+
+.projects .swiper-wrapper .swiper-slide-acitve{
+    transform: scale(1.1);
+}
+
+.projects .swiper-wrapper .swiper-slide .project{
+    box-shadow: 0px 0px 10px #000000cc;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.projects .swiper-wrapper .swiper-slide .project:hover{
+    transform: scale(1.025);
+}
+
+.projects .swiper-wrapper .swiper-slide .project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects .swiper-wrapper .swiper-slide .project .project-text{
+    position: absolute;
+    top: calc(100% - 300px);
+    height: 300px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0,0,0,.5);
+    padding: 0 50px;
+    border-radius: 0 500% 0 0;
+}
+
+.projects .swiper-wrapper .swiper-slide .project .project-text h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.projects .swiper-wrapper .swiper-slide .project .project-text p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #efefef;
+}
+
+.projects .swiper-wrapper .swiper-slide .project .project-text a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #efefef;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    text-decoration: none;
+    border: 1px solid #efefef;
+    padding: 15px 30px;
+    margin-top: 40px;
+    transition: .5s
+}
+
+.projects .swiper-wrapper .swiper-slide .project .project-text a:hover{
+    background-color: #efefef;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.projects .swiper-wrapper .swiper-slide .project-open{
+    background: rgba(0,0,0,.5);
+}
+
+.projects .swiper-wrapper .swiper-slide .project-open:hover{
+    background: rgba(0,0,0,.8);
+    transform: scale(1.025);
+}
+
+.projects .swiper-wrapper .swiper-slide .project-open .container{
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.projects .swiper-wrapper .swiper-slide .project-open .container h1{
+    font-size: 5rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    color: white ;
+    border: 1px solid white;
+    padding: 150px 25px;
+    margin: 0;
+}
+
 .contact{
     text-align: center;
     background-color: var(--secondary-color);
@@ -784,6 +915,7 @@ footer .container a i:hover{
         width: 100%;
         height: 100%;
     }
+
 }
 
 @media screen and (max-width: 480px){
@@ -842,6 +974,7 @@ footer .container a i:hover{
     .about .container .column-right .row-2 .experience p{
         font-size: 1rem;
     }
+
     .contact .container h1{
         font-size: 1.5rem;
     }
