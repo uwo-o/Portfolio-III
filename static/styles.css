@@ -585,7 +585,6 @@ html{
     background-color: var(--primary-color);
     border-radius: 30px;
     text-decoration: none;
-    border: 1px solid #efefef;
     padding: 15px 30px;
     margin-top: 40px;
     transition: .5s
